@@ -6,9 +6,10 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="../css/main.css">
 	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initital-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style>
-		#contactForm {
+		#contactForm1,
+		#contactForm2 {
 			font-family: 'Lora', serif;
 			padding: 10px;
 		}
@@ -20,71 +21,54 @@
 			text-align: right;
 			padding-right: 10px;
 			margin-top: 10px;
+			color: #1B263B;
+			/* deep blue */
 		}
 
-		#firstName {
+		#firstName,
+		#lastName,
+		#myEmail1,
+		#passWord1,
+		#myEmail2,
+		#passWord2 {
 			margin-top: 5px;
 			display: block;
 			width: 25%;
-			border: 2px solid #ccc;
+			border: 2px solid #415A77;
+			/* blue-gray */
 			border-radius: 5px;
 			font-size: 15px;
-			background-color: white;
+			background-color: #F8F9FA;
+			/* very light gray */
 			padding: 5px;
 			font-family: 'Lora', serif;
+			color: #1B263B;
+			/* deep blue */
 		}
 
-		#lastName {
-			margin-top: 5px;
-			display: block;
-			width: 25%;
-			border: 2px solid #ccc;
-			border-radius: 5px;
-			font-size: 15px;
-			background-color: white;
-			padding: 5px;
-			font-family: 'Lora', serif;
-		}
-
-		#myEmail {
-			margin-top: 5px;
-			display: block;
-			width: 25%;
-			border: 2px solid #ccc;
-			border-radius: 5px;
-			font-size: 15px;
-			background-color: white;
-			padding: 5px;
-			font-family: 'Lora', serif;
-		}
-
-		#passWord {
-			margin-top: 5px;
-			display: block;
-			width: 25%;
-			border: 2px solid #ccc;
-			border-radius: 5px;
-			font-size: 15px;
-			background-color: white;
-			padding: 5px;
-			font-family: 'Lora', serif;
-		}
-
-		#mySubmit {
+		#mySubmit1,
+		#mySubmit2 {
 			margin-top: 5px;
 			margin-left: 100px;
 			width: auto;
 			padding: 10px;
 			border-radius: 5px;
-			color: white;
-			background-color: #2D7F3E;
+			color: #0D1B2A;
+			/* almost black blue */
+			background-color: #FFD700;
+			/* gold */
 			font-size: 20px;
 			text-align: center;
 			font-family: 'Lora', serif;
+			transition: background 0.2s, color 0.2s;
 		}
 
-		#mySubmit:hover {
-			background-color: #667F6B;
+		#mySubmit1:hover,
+		#mySubmit2:hover {
+			background-color: #415A77;
+			/* blue-gray */
+			color: #FFD700;
+			/* gold */
 		}
 
 		@media only screen and (max-width: 1410px) {
@@ -96,11 +80,13 @@
 				width: 40%;
 			}
 
-			#myEmail {
+			#myEmail1,
+			#myEmail2 {
 				width: 40%;
 			}
 
-			#passWord {
+			#passWord1,
+			#passWord2 {
 				width: 40%;
 			}
 		}
@@ -114,11 +100,13 @@
 				width: 60%;
 			}
 
-			#myEmail {
+			#myEmail1,
+			#myEmail2 {
 				width: 60%;
 			}
 
-			#passWord {
+			#passWord1,
+			#passWord2 {
 				width: 60%;
 			}
 		}
@@ -132,11 +120,13 @@
 				width: 50%;
 			}
 
-			#myEmail {
+			#myEmail1,
+			#myEmail2 {
 				width: 50%;
 			}
 
-			#passWord {
+			#passWord1,
+			#passWord2 {
 				width: 50%;
 			}
 		}
@@ -146,7 +136,7 @@
 <body>
 	<div id="wrapper">
 		<header>
-			<a href="../Home/index.html"><img src="../Home/images/logo.png" width="100px" height="100px" alt="logo"></a>
+			<a href="../index.html"><img src="../images/logo.png" width="100px" height="100px" alt="logo"></a>
 			<h1>Healthy Vitamins</h1>
 		</header>
 		<div class="search">
@@ -154,11 +144,11 @@
 				<input type="text" placeholder="Search products..." name="search">
 			</form>
 			<a href="https://pixabay.com/illustrations/design-icon-modern-internet-sign-2381160/"><img class="basket"
-					src="../Home/images/basket.png" width="50px" height="50px" alt="basket"></a>
+					src="../images/basket.png" width="50px" height="50px" alt="basket"></a>
 		</div>
 		<nav>
 			<ul>
-				<li><a href="../Home/index.html">Home</a></li>
+				<li><a href="../index.html">Home</a></li>
 				<li><a href="../Products/products.html">Products</a></li>
 				<li><a href="../About/about.html">About</a></li>
 				<li><a style="border-right: none;" href="../Contact/contact.html">Contact Us</a></li>
@@ -167,24 +157,24 @@
 		</nav>
 		<main>
 			<h1>Log In</h1>
-			<form id="contactForm" method="post" action="http://mylinux.langara.bc.ca/~hhamavan/demo.php">
+			<form id="contactForm1" method="post" action="http://mylinux.langara.bc.ca/~hhamavan/demo.php">
 				<label for="myEmail">E-mail:</label>
-				<input type="text" name="myEmail" id="myEmail">
+				<input type="text" name="myEmail" id="myEmail1">
 				<label for="passWord">Password:</label>
-				<input type="password" name="passWord" id="passWord">
-				<input id="mySubmit" type="submit" value="Log In">
+				<input type="password" name="passWord" id="passWord1">
+				<input id="mySubmit1" type="submit" value="Log In">
 			</form>
 			<h1>Create an account</h1>
-			<form id="contactForm" method="post" action="http://mylinux.langara.bc.ca/~hhamavan/demo.php">
+			<form id="contactForm2" method="post" action="http://mylinux.langara.bc.ca/~hhamavan/demo.php">
 				<label for="firstName">First name:</label>
 				<input type="text" name="firstName" id="firstName">
 				<label for="lastName">Last name:</label>
 				<input type="text" name="lastName" id="lastName">
 				<label for="myEmail">E-mail:</label>
-				<input type="text" name="myEmail" id="myEmail">
+				<input type="text" name="myEmail" id="myEmail2">
 				<label for="passWord">Password:</label>
-				<input type="password" name="passWord" id="passWord">
-				<input id="mySubmit" type="submit" value="Sign Up">
+				<input type="password" name="passWord" id="passWord2">
+				<input id="mySubmit2" type="submit" value="Sign Up">
 			</form>
 		</main>
 		<footer>
@@ -196,7 +186,7 @@
 				<br>
 				<input class="signup" type="submit" value="Sign Me Up!"> <input class="signup" type="reset">
 			</form>
-			<a href="../Home/index.html"><img src="../Home/images/logo.png" width="50px" height="50px" alt="logo"></a>
+			<a href="../index.html"><img src="../images/logo.png" width="50px" height="50px" alt="logo"></a>
 			<h5>Copyright &copy; 2019 HealthyVitamins.com</h5>
 			<h6><i>Created by Phan, Duc Minh Tan</i></h6>
 		</footer>
