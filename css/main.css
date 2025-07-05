@@ -6,20 +6,20 @@ header {
 	grid-area: header;
 	background-color: #CCFFD6;
 	display: inline-block;
-    height: 100px;
+	height: 100px;
 }
 
 header img {
 	position: absolute;
-    margin-top: 25px;
-    margin-left: 17%;
+	margin-top: 25px;
+	margin-left: 17%;
 }
 
 header h1 {
 	color: #2D7F3E;
-    position: absolute;
-    margin-left: 23%;
-    margin-top: 75px;
+	position: absolute;
+	margin-left: 23%;
+	margin-top: 75px;
 }
 
 .search {
@@ -44,8 +44,8 @@ header h1 {
 
 .basket {
 	margin-left: 245%;
-    margin-top: -50px;
-    position: absolute;
+	margin-top: -50px;
+	position: absolute;
 }
 
 #wrapper {
@@ -168,10 +168,10 @@ footer img {
 	width: 10%;
 	padding: 10px;
 	border-radius: 5px;
-    color: white;
-    background-color: #2D7F3E;
-    font-size: 20px;
-    text-align: center;
+	color: white;
+	background-color: #2D7F3E;
+	font-size: 20px;
+	text-align: center;
 	font-family: 'Lora', serif;
 }
 
@@ -189,9 +189,7 @@ footer img {
 	font-family: 'Lora', serif;
 }
 
-@media only screen and (min-width: 1410px) {
-
-}
+@media only screen and (min-width: 1410px) {}
 
 @media only screen and (max-width: 1410px) {
 	header {
@@ -226,26 +224,26 @@ footer img {
 		margin-top: 0;
 		margin-left: 70%;
 	}
-	
+
 	figcaption {
 		font-size: .4em;
 		overflow: auto;
 	}
-	
+
 	nav {
 		margin-top: 0;
 		top: 48px;
 		z-index: 0;
 	}
-	
+
 	.item {
 		width: 40%;
 	}
-	
+
 	.signup {
 		width: auto;
 	}
-	
+
 	#email {
 		width: auto;
 	}
@@ -255,29 +253,29 @@ footer img {
 	.search input {
 		width: 93%;
 	}
-	
+
 	.basket {
 		margin-top: -50px;
 		margin-left: 93%;
 	}
-	
+
 	figcaption {
 		font-size: .3em;
 		overflow: auto;
 	}
-	
+
 	nav li {
 		float: none;
 	}
-	
+
 	li a {
 		padding: 0;
 	}
-	
+
 	.signin {
 		float: none;
 	}
-	
+
 	.item {
 		width: 46%;
 	}
@@ -288,23 +286,23 @@ footer img {
 		font-size: .2em;
 		overflow: auto;
 	}
-	
+
 	nav {
 		top: 33px;
 	}
-	
+
 	.search input {
 		padding: 5px;
 		width: 94%;
 	}
-	
+
 	.basket {
 		width: 30px;
 		height: 30px;
 		margin-left: 94%;
 		margin-top: -32px;
 	}
-	
+
 	.item {
 		width: 95%;
 	}

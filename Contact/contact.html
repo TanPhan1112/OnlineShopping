@@ -1,153 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Healthy Vitamins</title>
-		<meta charset="utf-8">
-		<link rel="stylesheet" href="../css/main.css">
-		<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
-		<meta name="viewport" content="width=device-width, initital-scale=1.0">
-		<style>
-			#contactForm {
-				font-family: 'Lora', serif;
-				padding: 10px;
-			}
-			label {
-				float: left;
-				width: 100px;
-				clear: left;
-				text-align: right;
-				padding-right: 10px;
-				margin-top: 10px;
-			}
+
+<head>
+	<title>Healthy Vitamins</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="/css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initital-scale=1.0">
+	<style>
+		#contactForm {
+			font-family: 'Lora', serif;
+			padding: 10px;
+		}
+
+		label {
+			float: left;
+			width: 100px;
+			clear: left;
+			text-align: right;
+			padding-right: 10px;
+			margin-top: 10px;
+		}
+
+		#myName {
+			margin-top: 5px;
+			display: block;
+			width: 25%;
+			border: 2px solid #ccc;
+			border-radius: 5px;
+			font-size: 15px;
+			background-color: white;
+			padding: 5px;
+			font-family: 'Lora', serif;
+		}
+
+		#myEmail {
+			margin-top: 5px;
+			display: block;
+			width: 25%;
+			border: 2px solid #ccc;
+			border-radius: 5px;
+			font-size: 15px;
+			background-color: white;
+			padding: 5px;
+			font-family: 'Lora', serif;
+		}
+
+		#myComments {
+			margin-top: 5px;
+			display: block;
+			width: 25%;
+			border: 2px solid #ccc;
+			border-radius: 5px;
+			font-size: 15px;
+			background-color: white;
+			padding: 5px;
+			font-family: 'Lora', serif;
+		}
+
+		#mySubmit {
+			margin-top: 5px;
+			margin-left: 100px;
+			width: auto;
+			padding: 10px;
+			border-radius: 5px;
+			color: white;
+			background-color: #2D7F3E;
+			font-size: 20px;
+			text-align: center;
+			font-family: 'Lora', serif;
+		}
+
+		#mySubmit:hover {
+			background-color: #667F6B;
+		}
+
+		@media only screen and (max-width: 1410px) {
 			#myName {
-				margin-top: 5px;
-				display: block;
-				width: 25%;
-				border: 2px solid #ccc;
-				border-radius: 5px;
-				font-size: 15px;
-				background-color: white;
-				padding: 5px;
-				font-family: 'Lora', serif;
+				width: 40%;
 			}
+
 			#myEmail {
-				margin-top: 5px;
-				display: block;
-				width: 25%;
-				border: 2px solid #ccc;
-				border-radius: 5px;
-				font-size: 15px;
-				background-color: white;
-				padding: 5px;
-				font-family: 'Lora', serif;
+				width: 40%;
 			}
+
 			#myComments {
-				margin-top: 5px;
-				display: block;
-				width: 25%;
-				border: 2px solid #ccc;
-				border-radius: 5px;
-				font-size: 15px;
-				background-color: white;
-				padding: 5px;
-				font-family: 'Lora', serif;
+				width: 40%;
 			}
-			#mySubmit {
-				margin-top: 5px;
-				margin-left: 100px;
-				width: auto;
-				padding: 10px;
-				border-radius: 5px;
-				color: white;
-				background-color: #2D7F3E;
-				font-size: 20px;
-				text-align: center;
-				font-family: 'Lora', serif;
+		}
+
+		@media only screen and (max-width: 880px) {
+			#myName {
+				width: 60%;
 			}
-			#mySubmit:hover {
-				background-color: #667F6B;
+
+			#myEmail {
+				width: 60%;
 			}
-			@media only screen and (max-width: 1410px) {
-				#myName {
-					width: 40%;
-				}
-				#myEmail {
-					width: 40%;
-				}
-				#myComments {
-					width: 40%;
-				}
+
+			#myComments {
+				width: 60%;
 			}
-			@media only screen and (max-width: 880px) {
-				#myName {
-					width: 60%;
-				}
-				#myEmail {
-					width: 60%;
-				}
-				#myComments {
-					width: 60%;
-				}
+		}
+
+		@media only screen and (max-width: 599px) {
+			#myName {
+				width: 50%;
 			}
-			@media only screen and (max-width: 599px) {
-				#myName {
-					width: 50%;
-				}
-				#myEmail {
-					width: 50%;
-				}
-				#myComments {
-					width: 50%;
-				}
+
+			#myEmail {
+				width: 50%;
 			}
-		</style>
-	</head>
-	<body>
-		<div id="wrapper">
-			<header>
-				<a href="../Home/index.html"><img src="../Home/images/logo.png" width="100px" height="100px" alt="logo"></a>
-				<h1>Healthy Vitamins</h1>
-			</header>
-			<div class="search">
-				<form method="get">
-					<input type="text" placeholder="Search products..." name="search">
-				</form>
-				<a href="https://pixabay.com/illustrations/design-icon-modern-internet-sign-2381160/"><img class="basket" src="../Home/images/basket.png" width="50px" height="50px" alt="basket"></a>
-			</div>
-			<nav>
-				<ul>
-					<li><a href="../Home/index.html">Home</a></li>
-					<li><a href="../Products/products.html">Products</a></li>
-					<li><a href="../About/about.html">About</a></li>
-					<li><a style="border-right: none;" href="contact.html">Contact Us</a></li>
-					<li class="signin"><a href="../Account/account.html">Sign in/Register</a></li>
-				</ul>
-			</nav>
-			<main>
-				<h1>Contact Us</h1>
-				<form id="contactForm" method="post" action="http://mylinux.langara.bc.ca/~hhamavan/demo.php">
-					<label for="myName">Name:</label>
-					<input type="text" name="myName" id="myName">
-					<label for="myEmail">E-mail:</label>
-					<input type="text" name="myEmail" id="myEmail">
-					<label for="myComments">Comments:</label>
-					<textarea name="myComments" id="myComments" rows="2" cols="20"></textarea>
-					<input id="mySubmit" type="submit" value="Submit">
-				</form>
-			</main>
-			<footer>
-				<h1>Join Our Newsletter</h1>
-				<h4>Sign up to all the latest offers, news and health tips!</h4>
-				<form method="get">
-					<input type="text" name="email" id="email" placeholder="Email address">
-					<br>
-					<br>
-					<input class="signup" type="submit" value="Sign Me Up!"> <input class="signup" type="reset">
-				</form>
-				<a href="../Home/index.html"><img src="../Home/images/logo.png" width="50px" height="50px" alt="logo"></a>
-				<h5>Copyright &copy; 2019 HealthyVitamins.com</h5>
-				<h6><i>Created by Phan, Duc Minh Tan</i></h6>
-			</footer>
+
+			#myComments {
+				width: 50%;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div id="wrapper">
+		<header>
+			<a href="/Home/index.html"><img src="/Home/images/logo.png" width="100px" height="100px" alt="logo"></a>
+			<h1>Healthy Vitamins</h1>
+		</header>
+		<div class="search">
+			<form method="get">
+				<input type="text" placeholder="Search products..." name="search">
+			</form>
+			<a href="https://pixabay.com/illustrations/design-icon-modern-internet-sign-2381160/"><img class="basket"
+					src="/Home/images/basket.png" width="50px" height="50px" alt="basket"></a>
 		</div>
-	</body>
+		<nav>
+			<ul>
+				<li><a href="/Home/index.html">Home</a></li>
+				<li><a href="/Products/products.html">Products</a></li>
+				<li><a href="/About/about.html">About</a></li>
+				<li><a style="border-right: none;" href="/Contact/contact.html">Contact Us</a></li>
+				<li class="signin"><a href="/Account/account.html">Sign in/Register</a></li>
+			</ul>
+		</nav>
+		<main>
+			<h1>Contact Us</h1>
+			<form id="contactForm" method="post" action="http://mylinux.langara.bc.ca/~hhamavan/demo.php">
+				<label for="myName">Name:</label>
+				<input type="text" name="myName" id="myName">
+				<label for="myEmail">E-mail:</label>
+				<input type="text" name="myEmail" id="myEmail">
+				<label for="myComments">Comments:</label>
+				<textarea name="myComments" id="myComments" rows="2" cols="20"></textarea>
+				<input id="mySubmit" type="submit" value="Submit">
+			</form>
+		</main>
+		<footer>
+			<h1>Join Our Newsletter</h1>
+			<h4>Sign up to all the latest offers, news and health tips!</h4>
+			<form method="get">
+				<input type="text" name="email" id="email" placeholder="Email address">
+				<br>
+				<br>
+				<input class="signup" type="submit" value="Sign Me Up!"> <input class="signup" type="reset">
+			</form>
+			<a href="/Home/index.html"><img src="/Home/images/logo.png" width="50px" height="50px" alt="logo"></a>
+			<h5>Copyright &copy; 2019 HealthyVitamins.com</h5>
+			<h6><i>Created by Phan, Duc Minh Tan</i></h6>
+		</footer>
+	</div>
+</body>
+
 </html>
